@@ -37,7 +37,7 @@ def main():
     # get the sentences 
     sentences = getSents()
 
-    # tag each word in each sentence
+    # oarse each sentence
     parsedSents = []
     for sent in sentences:
         for p in RDparser.parse_one(sent):
