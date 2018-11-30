@@ -1,8 +1,7 @@
 # Name: Sophia Trump
-# File: htToTokens.py
-# Description: Prepares the NLTK, LINUX, and "FRUGAL" dictionaries.
-#              Each function returns the respective dictionary as a list of words.
-# Last modified: Thurs, 11 October 2018
+# File: assignment5.py
+# Description: Parses sentences in the domain of animals and their properties.
+# Last modified: Fri, 30 November 2018
 
 import nltk
 import urllib.request
@@ -44,11 +43,8 @@ def main():
         for p in RDparser.parse_one(sent):
             print(p)
         print("\n")
-       
-    
 
-
-
+# formats the sentences as acceptable to parser (i.e., as a list of tokenized sentences)
 def getSents():
     sents = []
     
